@@ -5,33 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .main-container{
-            background-color: burlywood;
-        }
-     #submit-btn {
-         background-color: beige;
-         color: blue;
-         border: 1px solid blue;
-         width: 7rem;
-         height: 1.5rem;
-    }   
-    .label-style{
-        color:blue;
-    }
-    </style>
-    <script type="text/javascript">
-        const submitForm = () =>
-        {
-            var firstName;
-            firstName =  document.getElementById('firstname').value;
-            var lastName;
-            lastName = document.getElementById('lastname').value;
-            console.log('First name is: ' +firstName);
-            console.log('Last name is: ' +lastName);
-            alert('Name is: ' +firstName + ' ' +lastName)
-        }
-    </script>
+    <link rel="stylesheet" href="my.css">
 </head>
 <body class="main-container">
     <br>
@@ -39,14 +13,15 @@
         <label class="label-style">First name</label>
         <input tye="text" id="firstname">
     </div>
-   <br>
+    <br>
     <div>
         <label class="label-style">Last name</label>
         <input tye="text" id="lastname">
     </div>
     <br>
     <div>
-        <button  type="button" #btn id="submit-btn" onclick="submitForm()">Submit</button>
+        <button type="button" #btn id="submit-btn" onclick="submitForm()">Submit</button>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
